@@ -2,6 +2,9 @@
 *.d
 test*.c
 
+# DS_Store
+.DS_Store
+
 # Videos and images
 *.ppm
 *.y4m
