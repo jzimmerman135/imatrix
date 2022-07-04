@@ -1,0 +1,86 @@
+*==================================*
+| ____________ _____ _____  _   __ |
+| | ___ \ ___ \_   _/  __ \| | / / |
+| | |_/ / |_/ / | | | /  \/| |/ /  |
+| | ___ \    /  | | | |    |    \  |
+| | |_/ / |\ \ _| |_| \__/\| |\  \ |
+| \____/\_| \_|\___/ \____/\_| \_/ |
+|                                  |
+*==================================*
+Version: 0.0.0 6/14/2022
+Created by Jacob Zimmerman
+
+Purpose:
+========
+
+		Make and test medium sized C projects easily. A lightweight tool to
+	simplify some of C and make hassle, without preventing any normal features
+	from being used.
+
+Installation:
+=============
+
+        git clone https://github.com/jzimmerman135/brick.git
+        sudo ./brickinstall.sh
+
+Notes:
+======
+
+		A non-brick directory cannot be initialized as a brick project,
+	except manually
+
+
+Commands:
+=========
+
+	brick run
+	---------
+		Run the primary target (compiles if necessary).
+
+	brick run [program_name]
+	------------------------
+		Run an additional program (compiles if necessary).
+
+	brick test all
+	--------------
+		Run all test files (compiles if necessary).
+
+	brick test [test_name]
+	----------------------
+		Run specific test file (compiles if necessary).
+
+	brick new [project_name]
+	------------------------
+		Create a new project with a brick structure and ready Makefile.
+
+	brick add [file_name]
+	---------------------
+		Add a new [file_name].c and [file_name].h file in the src and include
+	directories respectively.
+
+	brick add test [test_name]
+	--------------------------
+		Add a new [test_name].c testing file and test.
+
+	brick remove [file_name]
+	------------------------
+		Removes [file_name].c and [file_name].h if applicable. Will ask for
+	permission if non-empty (override with brick remove -f [file_name]).
+
+	brick link [brick_stdlib_file_name].h
+	----------------------------------------
+		Allows you to use brick library file, will install if not already
+	downloaded.
+
+	brick unlink [brick_stdlib_file_name].h
+	-------------------------------------
+		Delete already installed brick standard library function.
+
+	brick docs add
+	--------------
+		Opens brick documentation editor file.
+
+	brick docs [optional-arg]
+	-------------------------
+		Opens brick documentation viewer, or specify an argument to see
+	specific documentation about that argument.
