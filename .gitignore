@@ -2,6 +2,11 @@
 *.d
 test*.c
 
+# Videos and images
+*.ppm
+*.y4m
+*.mp4
+
 # Object files
 *.o
 *.ko
